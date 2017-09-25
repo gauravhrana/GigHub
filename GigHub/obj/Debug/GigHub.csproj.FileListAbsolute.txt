@@ -83,3 +83,8 @@ F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.csproj.Gener
 F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.dll
 F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.pdb
 F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddIsCancelledToGig.resources
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNotificationTables.resources
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.Migrations.ChangeGigIdFK.resources
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\AutoMapper.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\AutoMapper.xml
