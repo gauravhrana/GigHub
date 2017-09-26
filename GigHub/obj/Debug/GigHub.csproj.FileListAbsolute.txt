@@ -88,3 +88,14 @@ F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.Migrations.A
 F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\obj\Debug\GigHub.Migrations.ChangeGigIdFK.resources
 F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\AutoMapper.dll
 F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\AutoMapper.xml
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Extensions.Conventions.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Web.Common.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Web.Mvc.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Web.WebApi.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\WebActivatorEx.dll
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.xml
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Extensions.Conventions.xml
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Web.Common.xml
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Web.Mvc.xml
+F:\MyCode\Live Tutorial Projects\MVC\GigHub\GigHub\bin\Ninject.Web.WebApi.xml

@@ -1,45 +1,37 @@
-﻿using GigHub.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
-using System.Data.Entity;
-using GigHub.ViewModels;
+using GigHub.Core.ViewModels;
+using Microsoft.AspNet.Identity;
+using GigHub.Core;
 
 namespace GigHub.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
 
-        private ApplicationDbContext _context;
-        public HomeController()
+        public HomeController(IUnitOfWork unitOfWork)
         {
-            _context = new Models.ApplicationDbContext();
+            _unitOfWork = unitOfWork;
         }
         public ActionResult Index(string query = null)
         {
-            var upComingGigs = _context.Gigs
-                .Include(g => g.Artist)
-                .Include(g => g.Genre)
-                //.Where(g => g.DateTime > DateTime.Now && !g.IsCancelled);
-                .Where(g => g.DateTime > DateTime.Now);
+            var upComingGigs = _unitOfWork.Gigs.GetUpComingGigs(query);
+            
 
-            if (!string.IsNullOrWhiteSpace(query))
-            {
-                upComingGigs = upComingGigs.
-                    Where(g =>
-                            g.Artist.Name.Contains(query) ||
-                            g.Venue.Contains(query) ||
-                            g.Genre.Name.Contains(query));
-            }
+            var currentUserId = User.Identity.GetUserId();
+
+            var attendances = _unitOfWork.Attendances
+                .GetFutureAttendances(currentUserId)
+                .ToLookup(a => a.GigId);
 
             var gigsViewModel = new GigsViewModel
             {
                 UpcomingGigs = upComingGigs,
                 ShowActions = User.Identity.IsAuthenticated,
                 Heading = "Upcoming Gigs",
-                SearchTerm = query
+                SearchTerm = query,
+                Attendances = attendances
             };
 
             return View("Gigs", gigsViewModel);
